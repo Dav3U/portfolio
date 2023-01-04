@@ -4,12 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./portfolio.css">
-    <link rel="stylesheet" href="../bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
- <!--CSS Styles -->
- <!-- <link rel="stylesheet" href="../assets/css/styles.css" /> -->
+    <link 
+    rel="stylesheet" 
+    href="./portfolio.css"
+    >
 
+    <link 
+    rel="stylesheet" 
+    href="../font-awesome-4.7.0/css/font-awesome.css"
+    >
+
+    <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" 
+    crossorigin="anonymous">
+
+    
+    <!-- <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" 
+    integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" 
+    crossorigin="anonymous"> -->
+
+    
  <!-- Favicons -->
  <link
    rel="apple-touch-icon"
@@ -42,7 +60,7 @@
           
 
           <button class="navbar-toggler" type="button" id="navbar-toggler" data-toggle="collapse" data-target="#collapsedNavbar" aria-controls="collapsedNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="fa-bars fa "></span>
           </button>
 
           <div class="collapse navbar-collapse" id="collapsedNavbar" >
@@ -81,7 +99,7 @@
 
 
           </a>
-           <a href="https://www.linkedin.com/in/unyec-ujile-34544b237="class="fa fa-1.5x  fa-linkedin " target="_blank" aria-label="link to developer's LinkedIn page">
+           <a href="https://www.linkedin.com/in/unye-ujile-34544b237"class="fa fa-1.5x  fa-linkedin " target="_blank" aria-label="link to developer's LinkedIn page">
 
           </a> 
 
@@ -108,14 +126,16 @@
         <!-- Landing decsription -->
           <section class="landing row "id="about">
             <aside class=" pic col col-sm-12 col-md-12 col-lg-6">
-              <img src="../assets/images/image-2.jpeg" alt="landing page Image" class="img" id="img">
+              <img src="../assets/images/image-2.jpeg" alt="landing page Image" 
+              class="img" id="img">
             </aside>
 
             <div class=" writeUp col-sm-12 col-md-12 col-lg-6">
 
              <div class="writeUpText row">
               
-              <h1 class="col-12 articleHead">Hi, I'm <span class="articlehHeadHighlight">Unye</span>.
+              <h1 class="col-12 articleHead">Hi, I'm <span 
+                class="articlehHeadHighlight">Unye</span>.
              </h1> 
              <p class="col- articleText">
               I'm a 
@@ -191,40 +211,85 @@
      <!-- my project section -->
 
     <section class="row" id="projects">
-      <div class="skillText col-lg-6 col-md-12 col-sm-12">
-        <h3 class="skill-header aboutUsHeader">  My  <span class="articlehHeadHighlight">Projects</span></h2>
-        <ul>
-          <li>
-            Media Hub 
-          </li>
 
-          <li>
-            Simple To-Do List Using HTML DOM
-          </li>
+      <div class="skillText col-lg-12 col-md-12 col-sm-12">
 
-          <li>
-             VR Headset Landing Page
-          </li>
-
-          
-        </ul>
-
+        <h3 class="skill-header aboutUsHeader">  My  <span class="articlehHeadHighlight">Projects</span></h3>
 
       </div>
 
-      <div class="col-lg-6 col-md-12 col-sm-12">
 
-        <h3>
+        <div class="projectDiv col-lg-4 col-md-12 col-sm-12">
+
+          <div class="projectImageDiv">
+            <img 
+            class="img" 
+            src="../assets/images/expenseTracker.png" 
+            alt="project-image"
+            >
+          </div>
          
-        </h3>
-
-      </div>
 
 
-     
+          <a 
+          class="projectLink text-center" 
+          href="https://github.com/Dav3U/media-cards.git"
+          target="_blank">Media Hub</a>
 
+
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In ducimus fugit reprehenderit tenetur odio consectetur fuga ipsam quae sed rem?</p>
+
+        </div>
+
+        <div class="projectDiv col-lg-4 col-md-12 col-sm-12">
+
+          <div class="projectImageDiv">
+            <img 
+            class="img" 
+            src="../assets/images/expenseTracker.png" 
+            alt="project-image"
+            >
+          </div>
+         
+          <a class="projectLink text-center"
+          href="https://github.com/Dav3U/landingpage.git" 
+          target="_blank">VR Headset Landing Page</a>
+          
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quasi minima praesentium exercitationem laudantium non, minus iste quisquam tempora totam.</p>
+
+        </div>
+       
+        <div class="projectDiv col-lg-4 col-md-12 col-sm-12 ">
+
+          <div class="projectImageDiv">
+            <img 
+            class="img" 
+            src="../assets/images/expenseTracker.png" 
+            alt="project-image"
+            >
+          </div>
+         
+          <h2 class="aboutUsHeader"> To Do List</h2>
+
+          <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi harum natus facere illo nam doloremque accusamus optio est impedit!
+          </p>
+
+
+          <a class="btn btn-danger projectLink" 
+          href="https://github.com/Dav3U/To-Do-List.git" target="_blank">View Repo 
+          <i class="fa fa-github fa-1.5x"></i>
+          </a>
+
+            <a href="#" class="btn btn-danger projectLink" target="_blank">Open Webpage  
+              <i class="fa fa-external-link fa-1.5x"></i>
+              </a>
+        </div>
 
     </section>
+
+
+      
 
 
         <!-- Connect with me section -->
@@ -276,9 +341,17 @@
 
                 
 
-    <script src="../bootstrap/jquery-3.6.0.min.js"></script>
-    <script src="../bootstrap/bootstrap.js"></script>
-    <!-- <script src="../assets/js/app.js"></script> -->
+    <!-- <script src="../bootstrap/jquery-3.6.0.min.js"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js" 
+    integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" 
+    crossorigin="anonymous">
+  </script>
+    <!-- <script src="../bootstrap/bootstrap.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+     crossorigin="anonymous"></script>
     <script src="../src/portfolio.js"></script>
 
     <!-- Ion icons scripts -->

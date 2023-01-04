@@ -34,6 +34,8 @@ body{
 .mainDiv{
     width: 100%;
     height:auto;
+    border:1px solid blue;
+    
     /* padding: 5px; */
 
 
@@ -63,7 +65,7 @@ body{
 
 .navHeader{
     /* font-weight: bold; */
-    width: 35%;
+    width: 38%;
 
 }
 /* @media only screen and (max-width: 950px) {
@@ -82,7 +84,7 @@ body{
     /* width: 100%; */
     height: auto;
     /* position: absolute; */
-    /* border: 2px solid black; */
+    border: 2px solid black;
     /* background-color: rgb(68, 68, 237); */
     padding: 0px;
 
@@ -146,15 +148,11 @@ body{
 .img{
     width: 100%;
     height: 100%;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 
-.mainDiv{
-    border:1px solid blue;
-    width: 100%;
-    /* height: 1000px; */
-}
+
 
 
 .aboutUsHeader{
@@ -257,6 +255,34 @@ text-align: right;
       
 
 }
+.projectDiv{
+    text-align: center;
+    height: auto;
+
+    border: 1px solid red;
+}
+
+.projectDiv a, .projectDiv p{
+    text-align: left;
+    /* display: block; */
+}
+
+.projectDivImage{
+    margin: 0;
+    padding: 0;
+}
+
+#projects{
+
+}
+
+.btn{
+    border: 1px solid red;
+}
+
+   
+    
+
 /* ul.navbar-nav{
     float:right;
     }
