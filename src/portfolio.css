@@ -266,7 +266,13 @@ text-align: right;
         width: 5rem;
         height: 5rem;
       }
+      .navbar-nav {
+        padding-top: 30%; 
+        height: calc(100vh - 100px);
+        text-align: center;
 
+    
+        }
 
 
 }
@@ -317,10 +323,4 @@ text-align: right;
         list-style-type: none;
     } */
 
-    .navbar-nav {
-    margin-right: 10%;
-    height: 100vh; 
-    padding-top: 30%;
-    border: ;
-
-    }
+   

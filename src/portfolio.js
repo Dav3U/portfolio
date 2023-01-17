@@ -8,12 +8,6 @@ navLinks.forEach((l) => {
 })
 
 // Navbar autoclose on main poage click
-maindiv.addEventListener('click', () => { bsCollapse.toggle() })
+// maindiv.addEventListener('click', () => { bsCollapse.toggle() })
 
-// function hey(){
-// console.log("chucky is a big boy")
-
-// }
-
-// hey()
 
