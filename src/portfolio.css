@@ -36,29 +36,13 @@ body{
 .mainDiv{
     width: 100%;
     height:auto;
-    /* border:1px solid blue; */
-    
-    /* padding: 5px; */
 
-
-}
-#collapsedNavbar .nav-ul {
-    /* text-align: right; */
-    /* border: 1px solid red; */
-    /* float:right; */
-    /* width: 100%; */
 }
 
 #collapsedNavbar ul li a{
  text-align: center;
 }
 
-#collapsedNavbar{
-    /* border-radius: 3px; */
-    /* box-sizing: border-box; */
-    /* height: 100%; */
-
-}
 
 .navbar-brand {
     text-align: left;
@@ -179,11 +163,7 @@ body{
 
 
 
-.aboutUsHeader{
-    text-align: center;
-    padding: 10px;
-    font-weight: bold;
-}
+
 .aboutUsHeaderText{
     padding: 0px 10px 0px 10px;
 }
@@ -266,12 +246,9 @@ text-align: right;
         width: 5rem;
         height: 5rem;
       }
-      .navbar-nav {
-        padding-top: 30%; 
-        height: calc(100vh - 100px);
-        text-align: center;
-
-    
+     
+        .projectName{
+            text-align: left;
         }
 
 
@@ -287,7 +264,7 @@ text-align: right;
 }
 .projectDiv{
     text-align: center;
-    height: auto;
+    margin-bottom: 20px;
 
     border: 1px solid red;
 }
@@ -302,13 +279,28 @@ text-align: right;
     padding: 0;
    
 }
+.projectImageDiv, .projectName , .aboutProject{
 
-#projects{
-
+    padding: 15px;
 }
 
-.btn{
-    border: 1px solid red;
+.aboutUsHeader{
+    text-align: center;
+}
+.aboutUsHeader, .projectName{
+    font-weight: bold;
+}
+
+
+
+.projectImageDiv{
+    padding-top: 10%;
+}
+
+
+
+.btn, .row{
+padding: 25px;
 }
 
    
