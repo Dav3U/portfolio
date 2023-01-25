@@ -2,13 +2,17 @@
 maindiv= document.getElementById('main')
 const navLinks = document.querySelectorAll('.nav-item')
 const menuToggle = document.getElementById('collapsedNavbar')
+const skillsWrapper = document.getElementById('skills-wrapper')
+
 const bsCollapse = new bootstrap.Collapse(menuToggle,{toggle:false})
 
 
   var x = window.matchMedia("(max-width: 991px)")
 
+  var y = window.matchMedia("(max-width: 391px)")
 
-  function myFunction(x) {
+
+  function mediaQueryToggle(x) {
     if (x.matches) { // If media query matches
 
 // Navbar autoclose on main page click
@@ -25,7 +29,7 @@ const bsCollapse = new bootstrap.Collapse(menuToggle,{toggle:false})
         
             console.log(bsCollapse);
             bsCollapse._config.toggle = true;
-            // menuToggle.classList.add('down')
+
              
             }
             )
@@ -59,7 +63,22 @@ const bsCollapse = new bootstrap.Collapse(menuToggle,{toggle:false})
 
     }
   }
-  
-  myFunction(x) // Call listener function at run time
-  x.addListener(myFunction) // Attach listener function on state changes
 
+  
+  mediaQueryToggle(x) // Call listener function at run time
+  x.addListener(mediaQueryToggle) // Attach listener function on state changes
+
+
+  function hideSkillIcons(y) {
+    
+    if (y.matches) { // If media query matches
+        skillsWrapper.style.display="none";
+    }
+
+    else{
+        skillsWrapper.style.display="block";
+    }
+}
+
+hideSkillIcons(y);
+y.addListener(hideSkillIcons);

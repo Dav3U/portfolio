@@ -72,10 +72,11 @@ body{
 }
 }  */
 @media only screen and (min-width: 993px) {
-    .articleHead{
+    .articleHead, .skillText {
         margin-top: 5%;
 
     }
+    
     } 
 
 .landing{
@@ -190,13 +191,13 @@ body{
   }
   
   .skills-wrapper img {
-    padding: 1.25rem;
+    padding: 1rem;
   }
 
 
     .icon {
-        width: 7.875rem;
-        height: 7.25rem;
+        /* width: 7rem;
+        height: 7.25rem; */
       }
   
 
@@ -210,7 +211,7 @@ body{
 
 .skillText p{
     text-align: left;
-    border: 1px solid red;
+    border: 1px solid blue;
 }
 #navIcon{
    /* justify-content:space-between; */
