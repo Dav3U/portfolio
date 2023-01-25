@@ -5,7 +5,7 @@ const menuToggle = document.getElementById('collapsedNavbar')
 const bsCollapse = new bootstrap.Collapse(menuToggle,{toggle:false})
 
 
-  var x = window.matchMedia("(max-width: 720px)")
+  var x = window.matchMedia("(max-width: 991px)")
 
 
   function myFunction(x) {
@@ -29,7 +29,7 @@ const bsCollapse = new bootstrap.Collapse(menuToggle,{toggle:false})
              
             }
             )
-        2
+        
         
             } 
             else{
@@ -56,6 +56,7 @@ const bsCollapse = new bootstrap.Collapse(menuToggle,{toggle:false})
 
     } else {
     //   document.body.style.backgroundColor = "pink";
+
     }
   }
   
