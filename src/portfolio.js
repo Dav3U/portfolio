@@ -14,57 +14,52 @@ const bsCollapse = new bootstrap.Collapse(menuToggle,{toggle:false})
 
   function mediaQueryToggle(x) {
     if (x.matches) { // If media query matches
-
-// Navbar autoclose on main page click
-
-        window.addEventListener('click', function(e){   
-            if (document.getElementById('nav').contains(e.target)){
-              // Clicked in box
-            //   window.alert("click inside")
-        
-              navLinks.forEach((l) => {
-                l.addEventListener('click', 
-                () => { bsCollapse.toggle() 
-                } )
-        
-            console.log(bsCollapse);
-            bsCollapse._config.toggle = true;
-
-             
-            }
-            )
-        
-        
-            } 
-            else{
-              // Clicked outside the box
-            //   bsCollapse.toggle()
-            if(bsCollapse._config.toggle==true)
-            {
-        
-            bsCollapse.toggle();
-            bsCollapse._config.toggle = false;
-        
-            }
-
-        
-        
-            //   window.alert("click outside")
-        
-            }
-          });
-        
-
-
-
-
-    } else {
-    //   document.body.style.backgroundColor = "pink";
-
-    }
+        navBarResponse();
+       
   }
+  }
+  function navBarResponse(){
+    
+    // Navbar autoclose on main page click
+    
+            window.addEventListener('click', function(e){   
+                if (document.getElementById('nav').contains(e.target)){
+                  // Clicked in box
+                //   window.alert("click inside")
+            
+                  navLinks.forEach((l) => {
+                    l.addEventListener('click', 
+                    () => { bsCollapse.toggle() 
+                    } )
+            
+    
+                bsCollapse._config.toggle = true;
+    
+                 
+                }
+                )
+            
+            
+                } 
+                else{
+                  // Clicked outside the box
+                //   bsCollapse.toggle()
+                if(bsCollapse._config.toggle==true)
+                {
+            
+                bsCollapse.toggle();
+                bsCollapse._config.toggle = false;
+            
+                }
+    
+            
+            
+                //   window.alert("click outside")
+            
+                }
+              });
+        } 
 
-  
   mediaQueryToggle(x) // Call listener function at run time
   x.addListener(mediaQueryToggle) // Attach listener function on state changes
 

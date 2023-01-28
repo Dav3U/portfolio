@@ -196,8 +196,8 @@ body{
 
 
     .icon {
-        /* width: 7rem;
-        height: 7.25rem; */
+        width: 7rem;
+        height: 7.25rem;
       }
   
 
@@ -283,6 +283,11 @@ text-align: right;
 .projectImageDiv, .projectName , .aboutProject{
 
     padding: 15px;
+}
+
+
+.aboutProject{
+    /* margin: 0; */
 }
 
 .aboutUsHeader{
