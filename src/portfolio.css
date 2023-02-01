@@ -73,7 +73,7 @@ body{
 }  */
 @media only screen and (min-width: 993px) {
     .articleHead, .skillText {
-        margin-top: 5%;
+        margin-top: 2%;
 
     }
     
@@ -86,9 +86,9 @@ body{
     /* border: 2px solid black; */
     /* background-color: rgb(68, 68, 237); */
     padding: 0px;
-
-
 }
+
+
 
 .writeUp{
 
@@ -144,18 +144,14 @@ body{
     
     }
 
+
+
 .img{
     width: 100%;
     height: 100%;
-   
-}
-
-.img2{
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
+    /* border-radius: 5px;
     box-sizing: border-box;
-    box-shadow: 0 1px 5px var(--secondary-shadow);
+    box-shadow: 0 1px 5px var(--secondary-shadow); */
     
     /* border: 2px solid green; */
     /* padding: 20px; */
@@ -176,11 +172,9 @@ body{
 }
 
 .skills {
-    /* width: 100%; */
+
     height: 100%;
-    /* margin: none; */
     text-align: center;
-    margin-top: 2.5rem;
     border: 1px solid red;
 
   }
@@ -238,7 +232,7 @@ text-align: right;
 .icons i{
 padding: 10px;
 color: red;
-text-align: right;
+/* text-align: right; */
 
 }
 
@@ -247,48 +241,34 @@ text-align: right;
         width: 5rem;
         height: 5rem;
       }
-     
-        .projectName{
-            text-align: left;
-        }
-
-
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     .writeUpText {
     margin-top: 0;
       
       }
 
-      
+      .projectDiv {
+        margin-top: 5%;
+      }
+
+      div .link{
+        text-align: left;
+      }
+
+     #resumeLink{
+        width: 100%;
+        text-align: center;
+
+      }
 
 }
-.projectDiv{
-    text-align: center;
-    margin-bottom: 20px;
 
-    border: 1px solid red;
-}
+.projectDiv {
 
-.projectDiv a, .projectDiv p{
-    text-align: left;
-    /* display: block; */
-}
-
-.projectDiv .projectDivImage{
-    margin: 0;
-    padding: 0;
-   
-}
-.projectImageDiv, .projectName , .aboutProject{
-
-    padding: 15px;
-}
+  }
 
 
-.aboutProject{
-    /* margin: 0; */
-}
 
 .aboutUsHeader{
     text-align: center;
@@ -300,13 +280,14 @@ text-align: right;
 
 
 .projectImageDiv{
-    padding-top: 10%;
+    padding:15px;
 }
 
 
 
-.btn, .row{
-padding: 25px;
+.row{
+border: 1px solid blue;
+padding: 20px;
 }
 
    

@@ -9,7 +9,7 @@ const bsCollapse = new bootstrap.Collapse(menuToggle,{toggle:false})
 
   var x = window.matchMedia("(max-width: 991px)")
 
-  var y = window.matchMedia("(max-width: 391px)")
+  var y = window.matchMedia("(max-width: 389px)")
 
 
   function mediaQueryToggle(x) {
