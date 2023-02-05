@@ -55,7 +55,7 @@ body{
 
 
 
-
+x
 .navHeader{
     /* font-weight: bold; */
     width: 38%;
@@ -122,16 +122,18 @@ body{
 .img{
     width: 100%;
     height: 100%;
+
 }
 
+.pImg{
+    padding: 20px;
+    box-sizing: border-box;
+}
 
 .aboutUsHeaderText{
     padding: 0px 10px 0px 10px;
 }
 
-#img2{
-    width: 100%;
-}
 
 .skills {
 
