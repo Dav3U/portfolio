@@ -1,3 +1,2 @@
 # portfolio
-My portfolio page
-Built using the bootstrap framework, this portolio webesite depicts the flavours of simplicity and responsiveness which are important features of my websites.
+My Portfolio website is built using the bootstrap framework. This webesite encompasses my flavour for simplicity and responsiveness which are the important features I consider in development.
