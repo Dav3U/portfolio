@@ -33,10 +33,15 @@
 #collapsedNavbar ul li a{
  text-align: center;
 }
+#collapsedNavbar ul{
+    text-align:center;
+ border: 1px solid red;
 
+}
 
 .navbar-brand {
     text-align: left;
+    width: 38%;
 }
 
 .navbar{
@@ -235,12 +240,6 @@ color: red;
 
 .projectImageDiv{
     padding:15px;
-}
-
-.usedTech{
-    text-align: left;
-    margin: 0;
-    /* padding: 0; */
 }
 
 
