@@ -1,68 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark" id="html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- CCS link -->
     <link 
     rel="stylesheet" 
     href="./assets/css/portfolio.css"
     >
 
+    <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/2022b858f6.js" crossorigin="anonymous"></script>
 
+    <!-- Bootstrap  -->
     <link 
     rel="stylesheet" 
     href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" 
     crossorigin="anonymous">
-
     
-    <!-- <link 
-    rel="stylesheet" 
-    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" 
-    integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" 
-    crossorigin="anonymous"> -->
-
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+   
  <!-- Favicons -->
  <link
    rel="apple-touch-icon"
    sizes="180x180"
    href="./assets/icons/apple-touch-icon.png"
  />
- <!-- <link
-   rel="icon"
-   type="image/png"
-   sizes="32x32"
-   href="../assets/icons/favicon-32x32.png"
- /> -->
 
  <!-- Animate CSS CDN -->
  <link
    rel="stylesheet"
    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
  />
+    
+ <!-- Logo icon -->
+<link rel="icon" href="./assets/images/logo.svg">
 
-    <title>Unye Ujile | Web Developer</title>
+<title>Unye Ujile | Web Developer</title>
 </head>
 <body>
 
    
-      <!-- <div class=""> -->
-        <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light ">
 
-          <a class="navbar-brand font-weight-bold navHeader " href="#">UNYE UJILE</a>
+        <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary ">
+
+         
+          <a class="navbar-brand font-weight-bold navHeader " href="#">
+            <img src="./assets/images/logo.svg" alt="logo" width="30" height="23"> UNYE UJILE
+          </a>
           
           
-
-          <button class="navbar-toggler" type="button" id="navbar-toggler" data-toggle="collapse" data-target="#collapsedNavbar" aria-controls="collapsedNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="fa-bars fa "></span>
+          
+          <button class="navbar-toggler " type="button" id="navbar-toggler" data-toggle="collapse" data-target="#collapsedNavbar" aria-controls="collapsedNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-thin fa-bars"></span>
           </button>
+          
+
+
 
           <div class="collapse navbar-collapse" id="collapsedNavbar" >
 
-            <ul class=" nav-ul navbar-nav mr-auto navul mt-2 mt-lg-0">
+            <ul class=" nav-ul navbar-nav mr-auto navul mt-2 mt-lg-0 justify-content-center">
               <li class="nav-item">
                 <a class="nav-link" href="#about">About</a>
 
@@ -85,14 +86,17 @@
                     
         <div class="icons text-center" id="navIcon">
 
-          <a href="mailto:unyeujile@gmail.com" target="_blank" class="fa fa-1.5x fa-envelope" aria-label="link to developer's email" rel="noopener noreferrer">
+          <a href="#" class="fa fa-1.5x fa-sun" aria-label="dark mode toggle" rel="noopener noreferrer" id="modeIcon">
+          </a> 
+          
+          <!-- <a href="mailto:unyeujile@gmail.com" target="_blank" class="fa fa-1.5x fa-envelope" aria-label="link to developer's email" rel="noopener noreferrer" >
           </a> 
 
           <a href="tel:+2348161912230" target="_blank" class="fa fa-1.5x fa-phone " aria-label="link to developer's phone" rel="noopener noreferrer">
           </a> 
 
           <a href="https://www.twitter.com/directorclaude" target="_blank" class="fa fa-1.5x fa-twitter " aria-label="link to developer's twitter page" rel="noopener noreferrer">
-          </a> 
+          </a>  -->
 
         
            <a href="https://www.linkedin.com/in/unye-ujile-34544b237"class="fa fa-1.5x  fa-linkedin " target="_blank" aria-label="link to developer's LinkedIn page" rel="noopener noreferrer">
@@ -112,14 +116,25 @@
           </div>
         </nav>
 
-      <!-- </div> -->
     <main id="main" class="mainDiv container-fluid ">
+      <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn-danger">
+      <i class="fa-solid fa-arrow-up "></i>
+       Top
+      </button>
+
+      <!-- <button title="mode toggle" class="btn btn-danger" id="toggle" type="button"> 
+        
+        <i class="fa fa-moon fa-solid" ></i>
+
+      </button> -->
 
         <!-- Landing decsription -->
-    <section class="landing row border"id="about">
-            <aside class=" pic col col-sm-12 col-md-12 col-lg-6">
-              <img src="./assets/images/image-2.jpeg" alt="landing page Image" 
-              class="img" id="img">
+    <section class="landing row border align-items-center"id="about">
+      <aside class=" pic col col-sm-12 col-md-12 col-lg-6">
+       <img class="card-img-top" src="https://ik.imagekit.io/d3img/tr:w-800/landing-image.png" srcset="https://ik.imagekit.io/d3img/tr:w-400/landing-image.png 400w, 
+        https://ik.imagekit.io/d3img/tr:w-800/landing-image.png 800w,
+        https://ik.imagekit.io/d3img/tr:w-1200/landing-image.png 1200w" 
+         alt="landing page Image" class="img" id="img">
             </aside>
 
             <div class=" writeUp col-sm-12 col-md-12 col-lg-6">
@@ -131,15 +146,15 @@
              </h1> 
              <p class="articleText">
               A 
-              <span class="highlight">computer engineer</span> 
-              based in 
+              <span class="highlight">Computer Engineer</span> 
+              currently based in 
               <span class="highlight">Rivers, Nigeria.</span> 
                <br>
-              I'm a proficient front-end developer and an aspiring fullstack developer.<br>My major <span class="highlight">
+              I'm a proficient front-end developer and an aspiring fullstack developer amognst other skills.<br>My major <span class="highlight">
 
                 objective</span> in development is the delivery of <span class="highlight">responsive</span>  and <span class="highlight">scalable </span>web applications.</p> 
               <div id="resumeLink">
-                <a href="./assets/pdf/Unye Ujile Resume .pdf" class="btn btn-danger" target="_blank">
+                <a href="./assets/pdf/Unye Ujile Resume .pdf" class="btn btn-danger shadow" target="_blank">
                   Download My Resume 
                   <i class="fa fa-download"></i>
                 </a>
@@ -152,15 +167,16 @@
 
 
         <!-- Skills section -->
-    <section class="skills row border-bottom border-right border-left" id="skills">
+    <section class="skills row border-bottom border" id="skills">
 
       <div class="skillText col-lg-6 col-md-12 col-sm-12 writeUp">
         
         <h2 class="skill-header "> Familiar <span class="highlight">Technologies</span></h2>
         <p class="articleText">
-          I am competent in C++, Java and Javascript programming languages. I currently develop websites web using the
+          I am competent in C++, Java and Javascript programming languages. 
+          I currently develop websites web using the
            <a class="highlight" href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap Framework</a> and
-           <a class="highlight" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Javascript functions</a>  to improve the overall user exeprience of my websites. <br>I am venturing into development in <a href="https://reactjs.org/docs/getting-started.html" class="highlight" target="_blank" rel="noopener">React JS</a> to further improve my code skill. 
+           <a class="highlight" href="http://vanilla-js.com/" target="_blank" rel="noopener">Vanilla JS</a>  to improve the overall user exeprience of my websites. <br>I am venturing into development in <a href="https://reactjs.org/docs/getting-started.html" class="highlight" target="_blank" rel="noopener">React JS</a> to further improve my code skill. 
         </p>
 
 
@@ -213,17 +229,17 @@
 
      <!-- my project section -->
 
-    <section class="row border-bottom border-right border-left" id="projects">
+    <section class="row border-bottom border" id="projects">
 
       <div class="col-lg-12 col-md-12 col-sm-12">
 
-        <h3 class="skill-header aboutUsHeader">  My  <span class="highlight">Projects</span></h3>
+        <h3 class="skill-header">  My  <span class="highlight">Projects</span></h3>
 
       </div>
 
       <!-- media hub -->
       
-      <div class="card col-lg-4 col-md-12 col-sm-12 projectDiv ">
+      <div class="card col-lg-4 col-md-12 col-sm-12 projectDiv " id="projectDiv1">
         <img class="card-img-top pImg " src="https://ik.imagekit.io/d3img/tr:w-800/media-cards.png" 
         srcset="https://ik.imagekit.io/d3img/tr:w-400/media-cards.png 400w, 
         https://ik.imagekit.io/d3img/tr:w-800/media-cards.png 800w,
@@ -232,12 +248,12 @@
 
         <div class="card-body">
           <h5 class="card-title projectName"> <a href="https://github.com/Dav3U/media-cards.git" class="highlight">Media Hub</a></h5>
-          <p class="card-text">Media hub is a tool which allows a user to search, view and visit multimedia titles based on their search term. This project is implemented using React JS and media content is fetched via the official IMDB API.
+          <p class="card-text">Media hub is a tool which allows a user to search, view and visit multimedia titles. This project is implemented using React JS and media content is served via the IMDB API.
           </p>
 
 
         <div class="text-center ">
-          <a class="btn btn-danger" rel="noopener noreferrer"
+          <a class="btn btn-danger shadow" rel="noopener noreferrer"
         href="https://github.com/Dav3U/media-cards.git" target="_blank">Open Git Repository 
         <i class="fa fa-github"></i>
         </a>
@@ -250,7 +266,7 @@
 
       <!--landing page -->
 
-      <div class="card col-lg-4 col-md-12 col-sm-12 projectDiv ">
+      <div class="card col-lg-4 col-md-12 col-sm-12 projectDiv" id="projectDiv2">
         <img class="card-img-top pImg " src="https://ik.imagekit.io/d3img/tr:w-800/landing-page.png" 
         srcset="https://ik.imagekit.io/d3img/tr:w-400/landing-page.png 400w, 
         https://ik.imagekit.io/d3img/tr:w-800/landing-page.png 800w,
@@ -262,7 +278,7 @@
 
 
         <div class="text-center">
-          <a class="btn btn-danger" rel="noopener noreferrer"
+          <a class="btn btn-danger shadow" rel="noopener noreferrer"
         href="https://github.com/Dav3U/landingpage.git" target="_blank">Open Git Repository 
         <i class="fa fa-github"></i>
         </a>
@@ -274,7 +290,7 @@
     </div>
        
       <!-- to do list  -->
-      <div class="card col-lg-4 col-md-12 col-sm-12 projectDiv ">
+      <div class="card col-lg-4 col-md-12 col-sm-12 projectDiv " id="projectDiv3">
           <img class="card-img-top pImg " src="https://ik.imagekit.io/d3img/tr:w-800/to-do.png" 
           srcset="https://ik.imagekit.io/d3img/tr:w-400/to-do.png 400w, 
           https://ik.imagekit.io/d3img/tr:w-800/to-do.png 800w,
@@ -286,7 +302,7 @@
 
 
           <div class="text-center">
-            <a class="btn btn-danger" rel="noopener noreferrer"
+            <a class="btn btn-danger shadow" rel="noopener noreferrer"
           href="https://github.com/Dav3U/To-Do-List.git" target="_blank">Open Git Repository 
           <i class="fa fa-github"></i>
           </a>
@@ -308,7 +324,7 @@
 
         <!-- Connect with me section -->
 
-    <section class="row border-bottom border-right border-left" id="contact">
+    <section class="row border-bottom border" id="contact">
         <div class=" col-lg-12 col-md-12 col-sm-12">
           <h2 class="aboutUsHeader articleText ">Looking to <span class="highlight">connect </span>?</h2>
           <!-- <p class=" ">
@@ -349,30 +365,30 @@
         
       </main>
       
-      <footer class="text-center text-lg-start bg-light text-muted">
+      <footer class="text-center text-lg-start text-muted bg-body-tertiary" id="footer">
 
-     
-      
-
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-          © 2023 Copyright:
-          <a class="text-reset fw-bold" href="#">unyeujile.com</a>
+        <div class="text-center p-4 foot">
+         Unye Ujile © 2023 ⌁
+          <a class="text-reset" href="https://dav3u.github.io/portfolio">Designed by Unye</a>
+          
+          <!-- <a class="text-reset" href="https://github.com">Powered by Github</a> -->
         </div>
+        
+        
 
       </footer>
     
-
-    <!-- <script src="../bootstrap/jquery-3.6.0.min.js"></script> -->
 
     <script src="https://code.jquery.com/jquery-3.6.3.js" 
     integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" 
     crossorigin="anonymous">
   </script>
-    <!-- <script src="../bootstrap/bootstrap.js"></script> -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-     crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
     <script src="./assets/js/portfolio.js"></script>
 
     <!-- Ion icons scripts -->
