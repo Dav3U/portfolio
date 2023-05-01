@@ -57,12 +57,12 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', upd
 
   function modeChange(){
     if (colorMode=='light'){
-      document.getElementById('modeIcon').classList.toggle('fa-sun')
-      document.getElementById('modeIcon').classList.toggle('fa-moon')
+      document.getElementById('modeIcon').classList.toggle('fa-sun');
+      document.getElementById('modeIcon').classList.toggle('fa-moon');
     }
     else{
-      document.getElementById('modeIcon').classList.toggle('fa-sun')
-      document.getElementById('modeIcon').classList.toggle('fa-moon')
+      document.getElementById('modeIcon').classList.toggle('fa-sun');
+      document.getElementById('modeIcon').classList.toggle('fa-moon');
     }
 
     html.getAttribute('data-bs-theme')=='dark'? 
