@@ -267,10 +267,12 @@ div .icons a, .foot a{
     /* width: 70%; */
     border-radius: 15px 50px;
     padding: 20px;
-    color: red;
     background-color:red;
     font-style: italic;
     /* Add additional styling as needed */
+  }
+  .sect h5{
+    color: white;
   }
 
   .justify{
